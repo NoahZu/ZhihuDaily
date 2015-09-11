@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#bf360c</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="BLUE_BACKGROUND">#1BA6ED</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="BLACK">#000000</color>
+    <color name="DEEP_GRAY">#3c3f41</color>
+    <color name="ITEM_BACK">#fafafa</color>
+    <color name="ITEM_LIST_BACK">#f3f3f3</color>
+    <color name="LIGHT_GRAY">#f3f3f3</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="divider_back">#bbbbbb</color>
+</resources>

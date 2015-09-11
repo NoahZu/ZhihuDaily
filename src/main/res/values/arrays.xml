@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="google_colors">
+        <item>@color/actionbar_color</item>
+        <item>@color/BLUE_BACKGROUND</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/account_sina"
+        />
+    <TextView
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/BLACK"
+        />
+</LinearLayout>
