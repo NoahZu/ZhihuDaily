@@ -51,27 +51,6 @@ public class Util {
             e.printStackTrace();
         }
         return null;
-
-
-
-//        try {
-//            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-//            connection.setConnectTimeout(5000);
-//            connection.setRequestMethod("GET");
-//            InputStream inputStream = connection.getInputStream();
-//            StringBuffer stringBuffer = new StringBuffer("");
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-//            String lineString;
-//            while((lineString = reader.readLine())!=null){
-//                stringBuffer.append(lineString);
-//            }
-//            return stringBuffer.toString();
-//        }
-//        catch (IOException e){
-//            return null;
-//        }
-//        finally {
-//        }
     }
     public static Drawable bitmap2Drawable(Context context,Bitmap bitmap){
         Drawable drawable = new BitmapDrawable(context.getResources(), bitmap);

@@ -10,20 +10,17 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import com.google.gson.Gson;
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.HomePageDailyListAdapter;
 import com.zu.jinhao.zhihuribao.model.PastNewsJson;
 import com.zu.jinhao.zhihuribao.model.Story;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
+import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ViewPagerAdapter;
 import com.zu.jinhao.zhihuribao.model.LastNewsJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
 import com.zu.jinhao.zhihuribao.widget.DotWidget;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -36,6 +33,9 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.Response;
 
 /**
  * Created by zujinhao on 15/8/26.
@@ -122,29 +122,31 @@ public class HomePageFragment extends Fragment {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
                 if (view.getLastVisiblePosition() == view.getCount() - 1) {
-                    Toast.makeText(getActivity(), "====滑到底部啦!", Toast.LENGTH_SHORT).show();
                     getNewsByDate(getYesterday());
                 }
             }
-
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             }
         });
     }
     private void getLastNews() {
-        String lastNewsUrl = Url.LAST_NEWS_URL;
-        StringFromHttpLoader stringLoader = new StringFromHttpLoader();
-        stringLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+        ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
+        Call<LastNewsJson> lastNewsJsonCall = service.getLasetNews();
+        lastNewsJsonCall.enqueue(new Callback<LastNewsJson>() {
             @Override
-            public void onGetHttpString(String jsonString) {
-                LastNewsJson lastNewsJson = new Gson().fromJson(jsonString, LastNewsJson.class);
+            public void onResponse(Response<LastNewsJson> response) {
+                LastNewsJson lastNewsJson = response.body();
                 List<LastNewsJson.TopStory> stories = lastNewsJson.getTop_stories();
                 setTopStoriesToViewPager(stories);
                 setNewsToListView(lastNewsJson.getStories());
             }
+
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
         });
-        stringLoader.execute(lastNewsUrl);
     }
 
     private void setTopStoriesToViewPager(List<LastNewsJson.TopStory> stories) {
@@ -164,16 +166,18 @@ public class HomePageFragment extends Fragment {
         adapter.notifyDataSetChanged();
     }
     private void getNewsByDate(final String date) {
-        String dateNewsUrl = Url.GET_URL_BY_DATE+date;
-        StringFromHttpLoader stringLoader = new StringFromHttpLoader();
-        stringLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+        Call<PastNewsJson> pastNewsJsonCall = RetrofitUtil.getZhihuDailyService().getPastNews(date);
+        pastNewsJsonCall.enqueue(new Callback<PastNewsJson>() {
             @Override
-            public void onGetHttpString(String jsonString) {
-                PastNewsJson pastNewsJson = new Gson().fromJson(jsonString, PastNewsJson.class);
-                addNewsToListView(pastNewsJson.getStories(),date);
+            public void onResponse(Response<PastNewsJson> response) {
+                addNewsToListView(response.body().getStories(),date);
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
             }
         });
-        stringLoader.execute(dateNewsUrl);
     }
     public String getYesterday(){
         SimpleDateFormat sim = new SimpleDateFormat("yyyyMMdd");

@@ -23,8 +23,10 @@ import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ThemeListAdapter;
 import com.zu.jinhao.zhihuribao.database.DataBaseHelper;
 import com.zu.jinhao.zhihuribao.fragment.NetErrorFragment;
+import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
 import com.zu.jinhao.zhihuribao.util.Configuration;
 import com.zu.jinhao.zhihuribao.util.PreferenceUtil;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
 import com.zu.jinhao.zhihuribao.fragment.HomePageFragment;
 import com.zu.jinhao.zhihuribao.fragment.ThemeDailyFragment;
@@ -36,6 +38,11 @@ import com.zu.jinhao.zhihuribao.widget.LoginButton;
 import java.util.List;
 
 import butterknife.ButterKnife;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
@@ -77,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initViewEvents();//初始化其他控件的点击事件
         setDefaultIndexPage();//设置默认加载首页Fragment
     }
+
 
     private void initVariable() {
         dbHelper = new DataBaseHelper(this, Configuration.getDatabaseName(),null,1);
@@ -128,11 +136,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initLeftMenu() {
         themeDailyKindsListView.addHeaderView(headerView);
         if (Util.isNetworkConnected(this)){
-            StringFromHttpLoader stringFromHttpLoader = new StringFromHttpLoader();
-            stringFromHttpLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+            ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
+            Call<SubjectDailyJson> subjectDailyJsonCall =  service.getSubjectDailyJson();
+            subjectDailyJsonCall.enqueue(new Callback<SubjectDailyJson>() {
                 @Override
-                public void onGetHttpString(String jsonString) {
-                    SubjectDailyJson subjectDailyJson = new Gson().fromJson(jsonString, SubjectDailyJson.class);
+                public void onResponse(Response<SubjectDailyJson> response) {
+                    SubjectDailyJson subjectDailyJson = response.body();
                     subjectDailies = PreferenceUtil.readUserPreference(getApplicationContext(), subjectDailyJson.getOthers());
                     save2Database(subjectDailies);
                     ThemeListAdapter adapter = new ThemeListAdapter(
@@ -141,8 +150,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     );
                     themeDailyKindsListView.setAdapter(adapter);
                 }
+                @Override
+                public void onFailure(Throwable t) {
+
+                }
             });
-            stringFromHttpLoader.execute(Url.THEME_DAILY_LIST_URL);
         }
         else {
             subjectDailies = PreferenceUtil.readUserPreference(getApplicationContext(), dbHelper.queryAll());

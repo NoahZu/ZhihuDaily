@@ -11,13 +11,17 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 import com.zu.jinhao.zhihuribao.R;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
+import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.model.LauncherImageJson;
 import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.Response;
 
 public class LaunchActivity extends Activity {
 
@@ -26,8 +30,8 @@ public class LaunchActivity extends Activity {
     ImageView launcherImageView;
     @Bind(R.id.launcher_image_author)
     TextView launcherImageAuthorText;
-
     private LauncherImageJson launcherImageJson;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -40,16 +44,20 @@ public class LaunchActivity extends Activity {
 
     private void getLaunchInfoJson(){
         if(Util.isNetworkConnected(this)){
-            StringFromHttpLoader stringFromHttpLoader = new StringFromHttpLoader();
-            stringFromHttpLoader.setGetHttpStringListener(
-                    new StringFromHttpLoader.GetHttpStringListener() {
+            ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
+            Call<LauncherImageJson> launcherImageCall = service.getlauncherImage();
+            launcherImageCall.enqueue(new Callback<LauncherImageJson>() {
                 @Override
-                public void onGetHttpString(String jsonString) {
-                    launcherImageJson = new Gson().fromJson(jsonString, LauncherImageJson.class);
+                public void onResponse(Response<LauncherImageJson> response) {
+                    launcherImageJson = response.body();
                     initLauncherInfo();
                 }
+
+                @Override
+                public void onFailure(Throwable t) {
+
+                }
             });
-            stringFromHttpLoader.execute(Url.LAUNCHER_PAGE_URL);
             return;
         }
         launcherImageJson = new Gson().fromJson(Url.firstLauncherJson, LauncherImageJson.class);

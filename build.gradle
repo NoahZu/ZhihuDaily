@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
@@ -28,9 +28,11 @@ dependencies {
     testCompile 'org.assertj:assertj-core:1.6.1'
     compile 'com.android.support:appcompat-v7:22.2.0'
     compile 'com.google.code.gson:gson:2.3.1'
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
     compile 'in.srain.cube:ultra-ptr:1.0.10'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta1'
+    compile 'com.squareup.retrofit:retrofit-converters:2.0.0-beta1'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta1'
 }

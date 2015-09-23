@@ -1,6 +1,5 @@
 package com.zu.jinhao.zhihuribao.fragment;
 
-import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,14 +10,12 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.ThemeDailyListAdapter;
 import com.zu.jinhao.zhihuribao.model.SubjectDailyContentJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
 
 import butterknife.Bind;
@@ -28,6 +25,9 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
+import retrofit.Callback;
+import retrofit.Response;
+
 /**
  * Created by zujinhao on 15/8/26.
  */
@@ -102,17 +102,20 @@ public class ThemeDailyFragment extends Fragment {
         });
     }
     private void setViewValues(int id) {
-        StringFromHttpLoader stringFromHttpLoader = new StringFromHttpLoader();
-        stringFromHttpLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+        RetrofitUtil.getZhihuDailyService().getSubjectDailyContentJson(id+"")
+        .enqueue(new Callback<SubjectDailyContentJson>() {
             @Override
-            public void onGetHttpString(String jsonString) {
-                subjectDailyContentJson = new Gson().fromJson(jsonString, SubjectDailyContentJson.class);
+            public void onResponse(Response<SubjectDailyContentJson> response) {
+                subjectDailyContentJson = response.body();
                 Picasso.with(getActivity()).load(subjectDailyContentJson.getBackground()).into(displayImage);
                 displayText.setText(subjectDailyContentJson.getDescription());
                 dailyItemList.setAdapter(new ThemeDailyListAdapter(getActivity(), subjectDailyContentJson.getStories()));
             }
+            @Override
+            public void onFailure(Throwable t) {
+
+            }
         });
-        stringFromHttpLoader.execute(Url.THEME_DAILY_CONTENT_URL + id);
     }
     public void setId(int id) {
         this.id = id;
