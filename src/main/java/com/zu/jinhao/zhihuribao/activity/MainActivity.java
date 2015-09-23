@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ThemeListAdapter;
 import com.zu.jinhao.zhihuribao.database.DataBaseHelper;
@@ -27,11 +27,9 @@ import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
 import com.zu.jinhao.zhihuribao.util.Configuration;
 import com.zu.jinhao.zhihuribao.util.PreferenceUtil;
 import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
 import com.zu.jinhao.zhihuribao.fragment.HomePageFragment;
 import com.zu.jinhao.zhihuribao.fragment.ThemeDailyFragment;
 import com.zu.jinhao.zhihuribao.model.SubjectDailyJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
 import com.zu.jinhao.zhihuribao.widget.LoginButton;
 
@@ -40,9 +38,9 @@ import java.util.List;
 import butterknife.ButterKnife;
 import retrofit.Call;
 import retrofit.Callback;
-import retrofit.GsonConverterFactory;
 import retrofit.Response;
-import retrofit.Retrofit;
+import rx.Observable;
+import rx.Subscriber;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
@@ -84,8 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initViewEvents();//初始化其他控件的点击事件
         setDefaultIndexPage();//设置默认加载首页Fragment
     }
-
-
     private void initVariable() {
         dbHelper = new DataBaseHelper(this, Configuration.getDatabaseName(),null,1);
         tips = getResources().getString(R.string.net_error_yet);
@@ -169,11 +165,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             themeDailyKindsListView.setAdapter(adapter);
         }
     }
-    private void save2Database(List<SubjectDailyJson.SubjectDaily> others) {
-        if (dbHelper.queryAll() == null){
-            for (int i = 0;i<others.size();i++){
-                dbHelper.insertDaily(others.get(i));
-            }
+    private void save2Database(final List<SubjectDailyJson.SubjectDaily> others) {
+        Log.d(TAG,"===save2Database enter===");
+        if (dbHelper.queryAll() == null || dbHelper.queryAll().size() == 0){
+            Log.d(TAG,"===save2Database not null===");
+            Observable.create(
+                    new Observable.OnSubscribe<List<SubjectDailyJson.SubjectDaily>>() {
+                        @Override
+                        public void call(Subscriber<? super List<SubjectDailyJson.SubjectDaily>> subscriber) {
+                            subscriber.onNext(others);
+                            subscriber.onCompleted();
+                        }
+                    }
+            ).
+                    flatMap(dailies -> Observable.from(dailies))
+                    .doOnNext(daily -> dbHelper.insertDaily(daily))
+                    .subscribe();
         }
 
     }

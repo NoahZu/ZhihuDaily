@@ -5,25 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
-import com.google.gson.Gson;
+
 import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
 import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.model.NewsContentJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import retrofit.Call;
 import retrofit.Callback;
-import retrofit.GsonConverterFactory;
 import retrofit.Response;
-import retrofit.Retrofit;
 
 public class DailyContentActivity extends ActionBarActivity {
     private static final String TAG = "DailyContentActivity";

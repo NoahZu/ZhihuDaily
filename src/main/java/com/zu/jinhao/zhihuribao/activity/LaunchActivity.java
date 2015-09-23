@@ -16,15 +16,12 @@ import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.model.LauncherImageJson;
 import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;
-
 public class LaunchActivity extends Activity {
-
     private static final String TAG = "LaunchActivity";
     @Bind(R.id.launcher_image)
     ImageView launcherImageView;
@@ -41,7 +38,6 @@ public class LaunchActivity extends Activity {
         getLaunchInfoJson();//获取启动信息的json
         setLaunchAnimation();
     }
-
     private void getLaunchInfoJson(){
         if(Util.isNetworkConnected(this)){
             ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
@@ -52,7 +48,6 @@ public class LaunchActivity extends Activity {
                     launcherImageJson = response.body();
                     initLauncherInfo();
                 }
-
                 @Override
                 public void onFailure(Throwable t) {
 
