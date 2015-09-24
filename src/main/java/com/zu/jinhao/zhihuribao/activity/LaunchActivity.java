@@ -34,6 +34,7 @@ public class LaunchActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
+
         ButterKnife.bind(this);
         getLaunchInfoJson();//获取启动信息的json
         setLaunchAnimation();
@@ -81,7 +82,10 @@ public class LaunchActivity extends Activity {
     }
     private void initLauncherInfo() {
         Log.d(TAG, "===image" + launcherImageJson.getImg() + "text" + launcherImageJson.getText());
-        Picasso.with(this).load(launcherImageJson.getImg()).error(R.mipmap.picasso).into(launcherImageView);
+        Picasso.with(this)
+                .load(launcherImageJson.getImg())
+                .error(R.mipmap.picasso)
+                .into(launcherImageView);
         launcherImageAuthorText.setText(launcherImageJson.getText());
     }
     private void enterMainActivity() {

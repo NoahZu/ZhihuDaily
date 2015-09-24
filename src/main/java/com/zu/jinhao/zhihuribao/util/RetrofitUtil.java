@@ -9,11 +9,10 @@ import retrofit.Retrofit;
  * Created by zujinhao on 15/9/23.
  */
 public class RetrofitUtil {
-    private static Retrofit retrofit;
     public static ZhihuDailyService zhihuDailyService;
 
     static {
-        retrofit = new Retrofit.Builder()
+        Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Url.BASE_API_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

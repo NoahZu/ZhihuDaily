@@ -1,5 +1,6 @@
 package com.zu.jinhao.zhihuribao.fragment;
 
+import android.database.Observable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,8 +26,10 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
+import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;
+import rx.Observer;
 
 /**
  * Created by zujinhao on 15/8/26.
@@ -102,7 +105,7 @@ public class ThemeDailyFragment extends Fragment {
         });
     }
     private void setViewValues(int id) {
-        RetrofitUtil.getZhihuDailyService().getSubjectDailyContentJson(id+"")
+        RetrofitUtil.getZhihuDailyService().getSubjectDailyContentJson(id + "")
         .enqueue(new Callback<SubjectDailyContentJson>() {
             @Override
             public void onResponse(Response<SubjectDailyContentJson> response) {
@@ -111,6 +114,7 @@ public class ThemeDailyFragment extends Fragment {
                 displayText.setText(subjectDailyContentJson.getDescription());
                 dailyItemList.setAdapter(new ThemeDailyListAdapter(getActivity(), subjectDailyContentJson.getStories()));
             }
+
             @Override
             public void onFailure(Throwable t) {
 
