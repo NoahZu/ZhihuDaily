@@ -21,6 +21,9 @@ import butterknife.ButterKnife;
 import retrofit.Call;
 import retrofit.Callback;
 import retrofit.Response;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
+
 public class LaunchActivity extends Activity {
     private static final String TAG = "LaunchActivity";
     @Bind(R.id.launcher_image)
@@ -54,6 +57,13 @@ public class LaunchActivity extends Activity {
 
                 }
             });
+//            RetrofitUtil.getZhihuDailyService()
+//                    .getlauncherImage()
+//                    .map(launcherImageJson -> launcherImageJson.getImg())
+//                    .subscribeOn(Schedulers.io())
+//                    .observeOn(AndroidSchedulers.mainThread())
+//                    .subscribe(bitmap -> launcherImageView.setImageBitmap(bitmap));
+//            ;
             return;
         }
         launcherImageJson = new Gson().fromJson(Url.firstLauncherJson, LauncherImageJson.class);

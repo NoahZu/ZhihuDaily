@@ -40,6 +40,7 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit-converters:2.0.0-beta1'
     compile 'com.squareup.retrofit:converter-gson:2.0.0-beta1'
     compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
 }
 
 buildscript {

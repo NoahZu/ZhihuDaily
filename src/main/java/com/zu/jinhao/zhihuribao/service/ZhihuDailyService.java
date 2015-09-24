@@ -19,6 +19,7 @@ public interface ZhihuDailyService {
 
     //启动图片
     @GET("start-image/1080*1776")
+//    Call<LauncherImageJson> getlauncherImage();
     Call<LauncherImageJson> getlauncherImage();
 
     //最新消息
