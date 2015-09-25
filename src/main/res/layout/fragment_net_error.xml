@@ -23,13 +23,4 @@
         android:text="@string/net_error"
         android:layout_marginTop="@dimen/net_text_margin_top"
         android:textSize="@dimen/net_text_size"/>
-    <Button
-        android:id="@+id/try_again"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tips"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/net_text_margin_top"
-        android:text="@string/net_ok"
-        />
 </RelativeLayout>

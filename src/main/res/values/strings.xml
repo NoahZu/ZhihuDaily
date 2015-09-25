@@ -49,7 +49,8 @@
 
 
     <string name="net_ok">我已经连好网了</string>
-    <string name="net_error">没有网络哦~~请联网后再试</string>
+    <string name="net_error">     没有网络哦~~\n请联网后下拉刷新试试</string>
+    <string name="net_bed">     网络环境差</string>
     <string name="net_error_yet">还是没有网络呀！连上网再试试嘛！</string>
     <string name="sina_weibo">新浪微博</string>
     <string name="tencent_weibo">腾讯微博</string>

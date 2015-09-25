@@ -8,8 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.HomePageDailyListAdapter;
 import com.zu.jinhao.zhihuribao.model.PastNewsJson;
@@ -43,6 +45,7 @@ import retrofit.Response;
 public class HomePageFragment extends Fragment {
     private static final String TAG = "HomePageFragment";
     private View headerView;
+    private View emptyView;
     private View view;
     private DotWidget dotWidget;
     private ViewPager displayDailyPager;
@@ -68,9 +71,10 @@ public class HomePageFragment extends Fragment {
     }
     private void initViews() {
         headerView = LayoutInflater.from(getActivity()).inflate(R.layout.index_daily_header, null);
+        emptyView = this.view.findViewById(R.id.error_view);
         displayDailyPager = (ViewPager)this.headerView.findViewById(R.id.display_daily_pager);
         dotWidget = (DotWidget)this.headerView.findViewById(R.id.dot_widget);
-        dailyListView.addHeaderView(headerView);
+        dailyListView.setEmptyView(emptyView);
         ptrFrameLayout = (PtrFrameLayout)this.view.findViewById(R.id.index_ptr_layout);
     }
     private void initPullToRefreshLayout() {
@@ -131,28 +135,38 @@ public class HomePageFragment extends Fragment {
         });
     }
     private void getLastNews() {
-        ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
-        Call<LastNewsJson> lastNewsJsonCall = service.getLasetNews();
-        lastNewsJsonCall.enqueue(new Callback<LastNewsJson>() {
-            @Override
-            public void onResponse(Response<LastNewsJson> response) {
-                LastNewsJson lastNewsJson = response.body();
-                List<LastNewsJson.TopStory> stories = lastNewsJson.getTop_stories();
-                setTopStoriesToViewPager(stories);
-                setNewsToListView(lastNewsJson.getStories());
-            }
+        if(Util.isNetworkConnected(getActivity())){
+            ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
+            Call<LastNewsJson> lastNewsJsonCall = service.getLasetNews();
+            lastNewsJsonCall.enqueue(new Callback<LastNewsJson>() {
+                @Override
+                public void onResponse(Response<LastNewsJson> response) {
+                    LastNewsJson lastNewsJson = response.body();
+                    if(lastNewsJson != null){
+                        setTopStoriesToViewPager(lastNewsJson.getTop_stories());
+                        setStoriesToListView(lastNewsJson.getStories());
+                    }
+                }
 
-            @Override
-            public void onFailure(Throwable t) {
+                @Override
+                public void onFailure(Throwable t) {
 
-            }
-        });
+                }
+            });
+        }
+        else{
+            dailyListView.removeHeaderView(headerView);
+            Toast.makeText(getActivity(),getResources().getString(R.string.net_error),Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void setTopStoriesToViewPager(List<LastNewsJson.TopStory> stories) {
+        if (dailyListView.getHeaderViewsCount() ==0){
+            dailyListView.addHeaderView(headerView);
+        }
         displayDailyPager.setAdapter(new ViewPagerAdapter(getActivity(), stories));
     }
-    private void setNewsToListView(final List<Story> stories) {
+    private void setStoriesToListView(final List<Story> stories) {
         indexListStories.clear();
         indexListStories.addAll(stories);
         adapter.notifyDataSetChanged();
