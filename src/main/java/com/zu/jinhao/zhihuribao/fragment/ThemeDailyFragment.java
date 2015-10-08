@@ -129,6 +129,7 @@ public class ThemeDailyFragment extends Fragment {
                 @Override
                 public void onResponse(Response<SubjectDailyContentJson> response) {
                     subjectDailyContentJson = response.body();
+                    setDailyContent2View();
                 }
                 @Override
                 public void onFailure(Throwable t) {
@@ -136,7 +137,6 @@ public class ThemeDailyFragment extends Fragment {
                 }
             });
         }
-        setDailyContent2View();
     }
 
     private void setDailyContent2View() {
@@ -162,7 +162,7 @@ public class ThemeDailyFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-//        setViewValues(this.id);
+        setViewValues(this.id);
     }
     @Override
     public void onDestroyView() {

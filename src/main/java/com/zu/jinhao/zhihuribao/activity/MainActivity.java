@@ -150,9 +150,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .doOnNext((daily) -> dbHelper.insertDaily(daily))
                     .subscribe();
         }
-
-
-
     }
     private void initThemeDailyListEvents() {
         themeDailyKindsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
