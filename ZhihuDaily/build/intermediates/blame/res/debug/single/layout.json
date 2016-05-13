@@ -1,0 +1,222 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\dot_widget.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\dot_widget.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\theme_daily_item.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\theme_daily_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_simple_dropdown_hint.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_simple_dropdown_hint.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_theme_daily.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\fragment_theme_daily.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\activity_view_pager.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\activity_view_pager.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\list_data_divider.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\list_data_divider.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\index_daily_header.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\index_daily_header.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\image_text_button.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\image_text_button.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\login_button.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\login_button.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\cube_ptr_classic_default_header.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\in.srain.cube\\ultra-ptr\\1.0.10\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\cube_ptr_simple_loading.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\in.srain.cube\\ultra-ptr\\1.0.10\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\left_menu_top.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\left_menu_top.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_index.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\fragment_index.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_neterror.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\fragment_neterror.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\activity_launcher.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\activity_launcher.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\left_menu_list_item.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\left_menu_list_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\layout\\activity_theme_daily_content.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\layout\\activity_theme_daily_content.xml"
+    }
+]
