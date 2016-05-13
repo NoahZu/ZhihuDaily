@@ -11,13 +11,13 @@
                     "endOffset": 170
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 291,
+                        "startOffset": 55,
                         "endColumn": 119,
-                        "endOffset": 406
+                        "endOffset": 170
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 278
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 411,
+                        "startOffset": 175,
                         "endColumn": 107,
-                        "endOffset": 514
+                        "endOffset": 278
                     }
                 }
             },
@@ -45,17 +45,17 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 283,
-                    "endColumn": 108,
-                    "endOffset": 387
+                    "endColumn": 122,
+                    "endOffset": 401
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 519,
-                        "endColumn": 108,
-                        "endOffset": 623
+                        "startOffset": 283,
+                        "endColumn": 122,
+                        "endOffset": 401
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 392,
-                    "endColumn": 85,
-                    "endOffset": 473
+                    "startOffset": 406,
+                    "endColumn": 107,
+                    "endOffset": 509
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 628,
-                        "endColumn": 85,
-                        "endOffset": 709
+                        "startOffset": 406,
+                        "endColumn": 107,
+                        "endOffset": 509
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 478,
-                    "endColumn": 103,
-                    "endOffset": 577
+                    "startOffset": 514,
+                    "endColumn": 108,
+                    "endOffset": 618
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 714,
-                        "endColumn": 103,
-                        "endOffset": 813
+                        "startOffset": 514,
+                        "endColumn": 108,
+                        "endOffset": 618
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 582,
-                    "endColumn": 121,
-                    "endOffset": 699
+                    "startOffset": 623,
+                    "endColumn": 85,
+                    "endOffset": 704
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 818,
-                        "endColumn": 121,
-                        "endOffset": 935
+                        "startOffset": 623,
+                        "endColumn": 85,
+                        "endOffset": 704
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 704,
-                    "endColumn": 108,
+                    "startOffset": 709,
+                    "endColumn": 103,
                     "endOffset": 808
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 940,
-                        "endColumn": 108,
-                        "endOffset": 1044
+                        "startOffset": 709,
+                        "endColumn": 103,
+                        "endOffset": 808
                     }
                 }
             },
@@ -140,17 +140,17 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 813,
-                    "endColumn": 111,
-                    "endOffset": 920
+                    "endColumn": 121,
+                    "endOffset": 930
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1049,
-                        "endColumn": 111,
-                        "endOffset": 1156
+                        "startOffset": 813,
+                        "endColumn": 121,
+                        "endOffset": 930
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 925,
-                    "endColumn": 98,
-                    "endOffset": 1019
+                    "startOffset": 935,
+                    "endColumn": 81,
+                    "endOffset": 1012
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1161,
-                        "endColumn": 98,
-                        "endOffset": 1255
+                        "startOffset": 935,
+                        "endColumn": 81,
+                        "endOffset": 1012
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1024,
-                    "endColumn": 110,
-                    "endOffset": 1130
+                    "startOffset": 1017,
+                    "endColumn": 81,
+                    "endOffset": 1094
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1260,
-                        "endColumn": 110,
-                        "endOffset": 1366
+                        "startOffset": 1017,
+                        "endColumn": 81,
+                        "endOffset": 1094
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1135,
-                    "endColumn": 108,
-                    "endOffset": 1239
+                    "startOffset": 1099,
+                    "endColumn": 84,
+                    "endOffset": 1179
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1371,
-                        "endColumn": 108,
-                        "endOffset": 1475
+                        "startOffset": 1099,
+                        "endColumn": 84,
+                        "endOffset": 1179
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1244,
-                    "endColumn": 104,
-                    "endOffset": 1344
+                    "startOffset": 1184,
+                    "endColumn": 108,
+                    "endOffset": 1288
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1480,
-                        "endColumn": 104,
-                        "endOffset": 1580
+                        "startOffset": 1184,
+                        "endColumn": 108,
+                        "endOffset": 1288
                     }
                 }
             },
@@ -234,18 +234,151 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1349,
-                    "endColumn": 118,
-                    "endOffset": 1463
+                    "startOffset": 1293,
+                    "endColumn": 111,
+                    "endOffset": 1400
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-lv\\values-lv.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1293,
+                        "endColumn": 111,
+                        "endOffset": 1400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1405,
+                    "endColumn": 98,
+                    "endOffset": 1499
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1405,
+                        "endColumn": 98,
+                        "endOffset": 1499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1504,
+                    "endColumn": 110,
+                    "endOffset": 1610
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1585,
+                        "startOffset": 1504,
+                        "endColumn": 110,
+                        "endOffset": 1610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1615,
+                    "endColumn": 108,
+                    "endOffset": 1719
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1615,
+                        "endColumn": 108,
+                        "endOffset": 1719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1724,
+                    "endColumn": 104,
+                    "endOffset": 1824
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1724,
+                        "endColumn": 104,
+                        "endOffset": 1824
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1829,
+                    "endColumn": 118,
+                    "endOffset": 1943
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1829,
                         "endColumn": 118,
-                        "endOffset": 1699
+                        "endOffset": 1943
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1948,
+                    "endColumn": 98,
+                    "endOffset": 2042
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1948,
+                        "endColumn": 98,
+                        "endOffset": 2042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2047,
+                    "endColumn": 100,
+                    "endOffset": 2143
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-lv\\values-lv.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2047,
+                        "endColumn": 100,
+                        "endOffset": 2143
                     }
                 }
             }

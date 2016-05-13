@@ -11,13 +11,13 @@
                     "endOffset": 117
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-h720dp\\values-h720dp.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 294,
+                        "startOffset": 55,
                         "endColumn": 66,
-                        "endOffset": 356
+                        "endOffset": 117
                     }
                 }
             }

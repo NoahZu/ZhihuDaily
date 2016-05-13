@@ -11,13 +11,13 @@
                     "endOffset": 154
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 291,
+                        "startOffset": 55,
                         "endColumn": 103,
-                        "endOffset": 390
+                        "endOffset": 154
                     }
                 }
             },
@@ -26,11 +26,49 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 159,
-                    "endColumn": 98,
-                    "endOffset": 253
+                    "endColumn": 109,
+                    "endOffset": 264
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 159,
+                        "endColumn": 109,
+                        "endOffset": 264
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 269,
+                    "endColumn": 125,
+                    "endOffset": 390
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 269,
+                        "endColumn": 125,
+                        "endOffset": 390
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 395,
+                    "endColumn": 98,
+                    "endOffset": 489
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -42,14 +80,14 @@
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 258,
+                    "startOffset": 494,
                     "endColumn": 107,
-                    "endOffset": 361
+                    "endOffset": 597
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -61,14 +99,14 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 366,
+                    "startOffset": 602,
                     "endColumn": 83,
-                    "endOffset": 445
+                    "endOffset": 681
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -80,58 +118,20 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 450,
-                    "endColumn": 100,
-                    "endOffset": 546
+                    "startOffset": 686,
+                    "endColumn": 99,
+                    "endOffset": 781
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
                         "startOffset": 686,
-                        "endColumn": 100,
-                        "endOffset": 782
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 551,
-                    "endColumn": 113,
-                    "endOffset": 660
-                },
-                "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 787,
-                        "endColumn": 113,
-                        "endOffset": 896
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 665,
-                    "endColumn": 101,
-                    "endOffset": 762
-                },
-                "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 901,
-                        "endColumn": 101,
-                        "endOffset": 998
+                        "endColumn": 99,
+                        "endOffset": 781
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 767,
-                    "endColumn": 103,
-                    "endOffset": 866
+                    "startOffset": 786,
+                    "endColumn": 113,
+                    "endOffset": 895
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1003,
-                        "endColumn": 103,
-                        "endOffset": 1102
+                        "startOffset": 786,
+                        "endColumn": 113,
+                        "endOffset": 895
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 871,
-                    "endColumn": 95,
-                    "endOffset": 962
+                    "startOffset": 900,
+                    "endColumn": 77,
+                    "endOffset": 973
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1107,
-                        "endColumn": 95,
-                        "endOffset": 1198
+                        "startOffset": 900,
+                        "endColumn": 77,
+                        "endOffset": 973
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 967,
-                    "endColumn": 102,
-                    "endOffset": 1065
+                    "startOffset": 978,
+                    "endColumn": 77,
+                    "endOffset": 1051
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1203,
-                        "endColumn": 102,
-                        "endOffset": 1301
+                        "startOffset": 978,
+                        "endColumn": 77,
+                        "endOffset": 1051
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1070,
-                    "endColumn": 100,
-                    "endOffset": 1166
+                    "startOffset": 1056,
+                    "endColumn": 78,
+                    "endOffset": 1130
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1306,
-                        "endColumn": 100,
-                        "endOffset": 1402
+                        "startOffset": 1056,
+                        "endColumn": 78,
+                        "endOffset": 1130
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1171,
-                    "endColumn": 99,
-                    "endOffset": 1266
+                    "startOffset": 1135,
+                    "endColumn": 101,
+                    "endOffset": 1232
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1407,
-                        "endColumn": 99,
-                        "endOffset": 1502
+                        "startOffset": 1135,
+                        "endColumn": 101,
+                        "endOffset": 1232
                     }
                 }
             },
@@ -234,18 +234,151 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1271,
-                    "endColumn": 115,
-                    "endOffset": 1382
+                    "startOffset": 1237,
+                    "endColumn": 103,
+                    "endOffset": 1336
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-iw\\values-iw.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1237,
+                        "endColumn": 103,
+                        "endOffset": 1336
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1341,
+                    "endColumn": 95,
+                    "endOffset": 1432
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1341,
+                        "endColumn": 95,
+                        "endOffset": 1432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1437,
+                    "endColumn": 102,
+                    "endOffset": 1535
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1507,
+                        "startOffset": 1437,
+                        "endColumn": 102,
+                        "endOffset": 1535
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1540,
+                    "endColumn": 100,
+                    "endOffset": 1636
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1540,
+                        "endColumn": 100,
+                        "endOffset": 1636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1641,
+                    "endColumn": 99,
+                    "endOffset": 1736
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1641,
+                        "endColumn": 99,
+                        "endOffset": 1736
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1741,
+                    "endColumn": 115,
+                    "endOffset": 1852
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1741,
                         "endColumn": 115,
-                        "endOffset": 1618
+                        "endOffset": 1852
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1857,
+                    "endColumn": 95,
+                    "endOffset": 1948
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1857,
+                        "endColumn": 95,
+                        "endOffset": 1948
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1953,
+                    "endColumn": 102,
+                    "endOffset": 2051
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-iw\\values-iw.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1953,
+                        "endColumn": 102,
+                        "endOffset": 2051
                     }
                 }
             }

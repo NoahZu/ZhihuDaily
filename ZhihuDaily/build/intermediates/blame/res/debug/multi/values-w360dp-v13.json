@@ -11,13 +11,13 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-w360dp\\values-w360dp.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-w360dp-v13\\values-w360dp-v13.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 294,
+                        "startOffset": 55,
                         "endColumn": 54,
-                        "endOffset": 344
+                        "endOffset": 105
                     }
                 }
             }

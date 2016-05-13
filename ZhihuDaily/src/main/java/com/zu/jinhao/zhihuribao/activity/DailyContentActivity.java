@@ -8,17 +8,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Toast;
 
-import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
-import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.model.NewsContentJson;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class DailyContentActivity extends ActionBarActivity {
     private static final String TAG = "DailyContentActivity";
@@ -45,19 +45,26 @@ public class DailyContentActivity extends ActionBarActivity {
         getWeb();//获取url并显示在webview上
     }
     private void getWeb() {
-        ZhihuDailyService zhihuDailyServiceCall = RetrofitUtil.getZhihuDailyService();
-        Call<NewsContentJson> newsContentJsonCall = zhihuDailyServiceCall.getNewsContent("" + id);
-        newsContentJsonCall.enqueue(new Callback<NewsContentJson>() {
-            @Override
-            public void onResponse(Response<NewsContentJson> response) {
-                webView.loadUrl(response.body().getShare_url());
-            }
+                RetrofitUtil.getZhihuDailyService().getNewsContent("" + id)
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Subscriber<NewsContentJson>() {
+                        @Override
+                        public void onCompleted() {
+                            Toast.makeText(DailyContentActivity.this,"获取数据完成",Toast.LENGTH_SHORT).show();
+                        }
 
-            @Override
-            public void onFailure(Throwable t) {
+                        @Override
+                        public void onError(Throwable e) {
+                            Toast.makeText(DailyContentActivity.this,"获取数据出错",Toast.LENGTH_SHORT).show();
+                        }
 
-            }
-        });
+                        @Override
+                        public void onNext(NewsContentJson newsContentJson) {
+                            webView.loadUrl(newsContentJson.getShare_url());
+                        }
+                    })
+                ;
     }
     private void iniToolbar() {
         setSupportActionBar(toolbar);

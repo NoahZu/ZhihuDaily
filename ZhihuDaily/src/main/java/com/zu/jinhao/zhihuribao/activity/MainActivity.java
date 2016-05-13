@@ -1,11 +1,11 @@
 package com.zu.jinhao.zhihuribao.activity;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -22,25 +22,23 @@ import android.widget.Toast;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ThemeListAdapter;
 import com.zu.jinhao.zhihuribao.database.DataBaseHelper;
+import com.zu.jinhao.zhihuribao.fragment.HomePageFragment;
 import com.zu.jinhao.zhihuribao.fragment.NetErrorFragment;
-import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
+import com.zu.jinhao.zhihuribao.fragment.ThemeDailyFragment;
+import com.zu.jinhao.zhihuribao.model.SubjectDailyJson;
 import com.zu.jinhao.zhihuribao.util.Configuration;
 import com.zu.jinhao.zhihuribao.util.PreferenceUtil;
 import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
-import com.zu.jinhao.zhihuribao.fragment.HomePageFragment;
-import com.zu.jinhao.zhihuribao.fragment.ThemeDailyFragment;
-import com.zu.jinhao.zhihuribao.model.SubjectDailyJson;
 import com.zu.jinhao.zhihuribao.util.Util;
 import com.zu.jinhao.zhihuribao.widget.LoginButton;
 
 import java.util.List;
 
 import butterknife.ButterKnife;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
 import rx.Observable;
 import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "MainActivity";
@@ -132,25 +130,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initLeftMenu() {
         themeDailyKindsListView.addHeaderView(headerView);
         if (Util.isNetworkConnected(this)){
-            ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
-            Call<SubjectDailyJson> subjectDailyJsonCall =  service.getSubjectDailyJson();
-            subjectDailyJsonCall.enqueue(new Callback<SubjectDailyJson>() {
-                @Override
-                public void onResponse(Response<SubjectDailyJson> response) {
-                    SubjectDailyJson subjectDailyJson = response.body();
-                    subjectDailies = PreferenceUtil.readUserPreference(getApplicationContext(), subjectDailyJson.getOthers());
-                    save2Database(subjectDailies);
-                    ThemeListAdapter adapter = new ThemeListAdapter(
-                            getApplicationContext(),
-                            subjectDailies
-                    );
-                    themeDailyKindsListView.setAdapter(adapter);
-                }
-                @Override
-                public void onFailure(Throwable t) {
+            RetrofitUtil.getZhihuDailyService().getSubjectDailyJson()
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Subscriber<SubjectDailyJson>() {
+                        @Override
+                        public void onCompleted() {
+//                            Toast.makeText(MainActivity.this,"获取数据完成",Toast.LENGTH_SHORT).show();
+                        }
 
-                }
-            });
+                        @Override
+                        public void onError(Throwable e) {
+
+                        }
+
+                        @Override
+                        public void onNext(SubjectDailyJson subjectDailyJson) {
+                            subjectDailies = PreferenceUtil.readUserPreference(getApplicationContext(), subjectDailyJson.getOthers());
+                            save2Database(subjectDailies);
+                            ThemeListAdapter adapter = new ThemeListAdapter(
+                                    getApplicationContext(),
+                                    subjectDailies
+                            );
+                            themeDailyKindsListView.setAdapter(adapter);
+                        }
+                    });
         }
         else {
             subjectDailies = PreferenceUtil.readUserPreference(getApplicationContext(), dbHelper.queryAll());

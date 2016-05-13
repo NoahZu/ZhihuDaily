@@ -8,45 +8,45 @@ package in.srain.cube.views.ptr;
 
 public final class R {
 	public static final class attr {
-		public static final int ptr_content = 0x7f010039;
-		public static final int ptr_duration_to_close = 0x7f01003c;
-		public static final int ptr_duration_to_close_header = 0x7f01003d;
-		public static final int ptr_header = 0x7f010038;
-		public static final int ptr_keep_header_when_refresh = 0x7f01003f;
-		public static final int ptr_pull_to_fresh = 0x7f01003e;
-		public static final int ptr_ratio_of_header_height_to_refresh = 0x7f01003b;
-		public static final int ptr_resistance = 0x7f01003a;
-		public static final int ptr_rotate_ani_time = 0x7f010037;
+		public static final int ptr_content = 0x7f0100ab;
+		public static final int ptr_duration_to_close = 0x7f0100ae;
+		public static final int ptr_duration_to_close_header = 0x7f0100af;
+		public static final int ptr_header = 0x7f0100aa;
+		public static final int ptr_keep_header_when_refresh = 0x7f0100b1;
+		public static final int ptr_pull_to_fresh = 0x7f0100b0;
+		public static final int ptr_ratio_of_header_height_to_refresh = 0x7f0100ad;
+		public static final int ptr_resistance = 0x7f0100ac;
+		public static final int ptr_rotate_ani_time = 0x7f0100a9;
 	}
 	public static final class drawable {
-		public static final int ptr_rotate_arrow = 0x7f02003f;
+		public static final int ptr_rotate_arrow = 0x7f02004f;
 	}
 	public static final class id {
-		public static final int ptr_classic_header_rotate_view = 0x7f0d0061;
-		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0d0060;
-		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0d005e;
-		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0d005f;
-		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0d0062;
+		public static final int ptr_classic_header_rotate_view = 0x7f0d0062;
+		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0d0061;
+		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0d005f;
+		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0d0060;
+		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0d0063;
 	}
 	public static final class layout {
 		public static final int cube_ptr_classic_default_header = 0x7f04001e;
 		public static final int cube_ptr_simple_loading = 0x7f04001f;
 	}
 	public static final class string {
-		public static final int cube_ptr_hours_ago = 0x7f06000d;
-		public static final int cube_ptr_last_update = 0x7f06000e;
-		public static final int cube_ptr_minutes_ago = 0x7f06000f;
-		public static final int cube_ptr_pull_down = 0x7f060010;
-		public static final int cube_ptr_pull_down_to_refresh = 0x7f060011;
-		public static final int cube_ptr_refresh_complete = 0x7f060012;
-		public static final int cube_ptr_refreshing = 0x7f060013;
-		public static final int cube_ptr_release_to_refresh = 0x7f060014;
-		public static final int cube_ptr_seconds_ago = 0x7f060015;
+		public static final int cube_ptr_hours_ago = 0x7f060014;
+		public static final int cube_ptr_last_update = 0x7f060015;
+		public static final int cube_ptr_minutes_ago = 0x7f060016;
+		public static final int cube_ptr_pull_down = 0x7f060017;
+		public static final int cube_ptr_pull_down_to_refresh = 0x7f060018;
+		public static final int cube_ptr_refresh_complete = 0x7f060019;
+		public static final int cube_ptr_refreshing = 0x7f06001a;
+		public static final int cube_ptr_release_to_refresh = 0x7f06001b;
+		public static final int cube_ptr_seconds_ago = 0x7f06001c;
 	}
 	public static final class styleable {
-		public static final int[] PtrClassicHeader = { 0x7f010037 };
+		public static final int[] PtrClassicHeader = { 0x7f0100a9 };
 		public static final int PtrClassicHeader_ptr_rotate_ani_time = 0;
-		public static final int[] PtrFrameLayout = { 0x7f010038, 0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e, 0x7f01003f };
+		public static final int[] PtrFrameLayout = { 0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad, 0x7f0100ae, 0x7f0100af, 0x7f0100b0, 0x7f0100b1 };
 		public static final int PtrFrameLayout_ptr_content = 1;
 		public static final int PtrFrameLayout_ptr_duration_to_close = 4;
 		public static final int PtrFrameLayout_ptr_duration_to_close_header = 5;

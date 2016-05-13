@@ -10,17 +10,18 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.HomePageDailyListAdapter;
-import com.zu.jinhao.zhihuribao.model.PastNewsJson;
-import com.zu.jinhao.zhihuribao.model.Story;
-import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
-import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
-import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ViewPagerAdapter;
 import com.zu.jinhao.zhihuribao.model.LastNewsJson;
+import com.zu.jinhao.zhihuribao.model.PastNewsJson;
+import com.zu.jinhao.zhihuribao.model.Story;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.util.Util;
 import com.zu.jinhao.zhihuribao.widget.DotWidget;
+
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -33,9 +34,9 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 /**
  * Created by zujinhao on 15/8/26.
@@ -131,22 +132,27 @@ public class HomePageFragment extends Fragment {
         });
     }
     private void getLastNews() {
-        ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
-        Call<LastNewsJson> lastNewsJsonCall = service.getLasetNews();
-        lastNewsJsonCall.enqueue(new Callback<LastNewsJson>() {
-            @Override
-            public void onResponse(Response<LastNewsJson> response) {
-                LastNewsJson lastNewsJson = response.body();
-                List<LastNewsJson.TopStory> stories = lastNewsJson.getTop_stories();
-                setTopStoriesToViewPager(stories);
-                setNewsToListView(lastNewsJson.getStories());
-            }
+       RetrofitUtil.getZhihuDailyService().getLasetNews()
+               .subscribeOn(Schedulers.io())
+               .observeOn(AndroidSchedulers.mainThread())
+               .subscribe(new Subscriber<LastNewsJson>() {
+                   @Override
+                   public void onCompleted() {
+                       Toast.makeText(getActivity(),"获取数据完成",Toast.LENGTH_SHORT).show();
+                   }
 
-            @Override
-            public void onFailure(Throwable t) {
+                   @Override
+                   public void onError(Throwable e) {
+                        Toast.makeText(getActivity(),"获取数据失败",Toast.LENGTH_SHORT).show();
+                   }
 
-            }
-        });
+                   @Override
+                   public void onNext(LastNewsJson lastNewsJson) {
+                       List<LastNewsJson.TopStory> stories = lastNewsJson.getTop_stories();
+                       setTopStoriesToViewPager(stories);
+                       setNewsToListView(lastNewsJson.getStories());
+                   }
+               });
     }
 
     private void setTopStoriesToViewPager(List<LastNewsJson.TopStory> stories) {
@@ -166,18 +172,26 @@ public class HomePageFragment extends Fragment {
         adapter.notifyDataSetChanged();
     }
     private void getNewsByDate(final String date) {
-        Call<PastNewsJson> pastNewsJsonCall = RetrofitUtil.getZhihuDailyService().getPastNews(date);
-        pastNewsJsonCall.enqueue(new Callback<PastNewsJson>() {
-            @Override
-            public void onResponse(Response<PastNewsJson> response) {
-                addNewsToListView(response.body().getStories(),date);
-            }
+                RetrofitUtil.getZhihuDailyService().getPastNews(date)
+                        .subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(new Subscriber<PastNewsJson>() {
+                            @Override
+                            public void onCompleted() {
 
-            @Override
-            public void onFailure(Throwable t) {
+                            }
 
-            }
-        });
+                            @Override
+                            public void onError(Throwable e) {
+
+                            }
+
+                            @Override
+                            public void onNext(PastNewsJson pastNewsJson) {
+                                addNewsToListView(pastNewsJson.getStories(),date);
+                            }
+                        });
+
     }
     public String getYesterday(){
         SimpleDateFormat sim = new SimpleDateFormat("yyyyMMdd");

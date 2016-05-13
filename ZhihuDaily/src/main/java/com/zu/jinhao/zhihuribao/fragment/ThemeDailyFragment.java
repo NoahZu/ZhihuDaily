@@ -1,8 +1,7 @@
 package com.zu.jinhao.zhihuribao.fragment;
 
-import android.database.Observable;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,12 +10,13 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import com.squareup.picasso.Picasso;
-import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.ThemeDailyListAdapter;
 import com.zu.jinhao.zhihuribao.model.SubjectDailyContentJson;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.util.Util;
 
 import butterknife.Bind;
@@ -26,10 +26,9 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.Response;
-import rx.Observer;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 /**
  * Created by zujinhao on 15/8/26.
@@ -106,20 +105,27 @@ public class ThemeDailyFragment extends Fragment {
     }
     private void setViewValues(int id) {
         RetrofitUtil.getZhihuDailyService().getSubjectDailyContentJson(id + "")
-        .enqueue(new Callback<SubjectDailyContentJson>() {
-            @Override
-            public void onResponse(Response<SubjectDailyContentJson> response) {
-                subjectDailyContentJson = response.body();
-                Picasso.with(getActivity()).load(subjectDailyContentJson.getBackground()).into(displayImage);
-                displayText.setText(subjectDailyContentJson.getDescription());
-                dailyItemList.setAdapter(new ThemeDailyListAdapter(getActivity(), subjectDailyContentJson.getStories()));
-            }
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(new Subscriber<SubjectDailyContentJson>() {
+                    @Override
+                    public void onCompleted() {
 
-            @Override
-            public void onFailure(Throwable t) {
+                    }
 
-            }
-        });
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(SubjectDailyContentJson subjectDailyContentJson2) {
+                        subjectDailyContentJson = subjectDailyContentJson2;
+                        Picasso.with(getActivity()).load(subjectDailyContentJson.getBackground()).into(displayImage);
+                        displayText.setText(subjectDailyContentJson.getDescription());
+                        dailyItemList.setAdapter(new ThemeDailyListAdapter(getActivity(), subjectDailyContentJson.getStories()));
+                    }
+                });
     }
     public void setId(int id) {
         this.id = id;

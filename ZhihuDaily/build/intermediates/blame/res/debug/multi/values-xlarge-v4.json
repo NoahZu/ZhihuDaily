@@ -11,13 +11,13 @@
                     "endOffset": 127
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 293,
+                        "startOffset": 55,
                         "endColumn": 76,
-                        "endOffset": 365
+                        "endOffset": 127
                     }
                 }
             },
@@ -26,17 +26,17 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 132,
-                    "endColumn": 63,
-                    "endOffset": 191
+                    "endColumn": 70,
+                    "endOffset": 198
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 609,
-                        "endColumn": 63,
-                        "endOffset": 668
+                        "startOffset": 132,
+                        "endColumn": 70,
+                        "endOffset": 198
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 196,
-                    "endColumn": 66,
-                    "endOffset": 258
+                    "startOffset": 203,
+                    "endColumn": 70,
+                    "endOffset": 269
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 673,
-                        "endColumn": 66,
-                        "endOffset": 735
+                        "startOffset": 203,
+                        "endColumn": 70,
+                        "endOffset": 269
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 263,
-                    "endColumn": 66,
-                    "endOffset": 325
+                    "startOffset": 274,
+                    "endColumn": 69,
+                    "endOffset": 339
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 740,
-                        "endColumn": 66,
-                        "endOffset": 802
+                        "startOffset": 274,
+                        "endColumn": 69,
+                        "endOffset": 339
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 330,
-                    "endColumn": 65,
-                    "endOffset": 391
+                    "startOffset": 344,
+                    "endColumn": 69,
+                    "endOffset": 409
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 807,
-                        "endColumn": 65,
-                        "endOffset": 868
+                        "startOffset": 344,
+                        "endColumn": 69,
+                        "endOffset": 409
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 396,
-                    "endColumn": 65,
-                    "endOffset": 457
+                    "startOffset": 414,
+                    "endColumn": 67,
+                    "endOffset": 477
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 873,
-                        "endColumn": 65,
-                        "endOffset": 934
+                        "startOffset": 414,
+                        "endColumn": 67,
+                        "endOffset": 477
                     }
                 }
             },
@@ -120,18 +120,56 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 462,
-                    "endColumn": 54,
-                    "endOffset": 512
+                    "startOffset": 482,
+                    "endColumn": 67,
+                    "endOffset": 545
                 },
                 "from": {
-                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 939,
+                        "startOffset": 482,
+                        "endColumn": 67,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 550,
+                    "endColumn": 63,
+                    "endOffset": 609
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 63,
+                        "endOffset": 609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 614,
+                    "endColumn": 54,
+                    "endOffset": 664
+                },
+                "from": {
+                    "file": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 614,
                         "endColumn": 54,
-                        "endOffset": 989
+                        "endOffset": 664
                     }
                 }
             }
