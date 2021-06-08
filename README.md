@@ -1,3 +1,6 @@
+# 知乎日报的api已经不能用了 该项目废弃 
+
+
 ## 知乎日报思路分析        
 ##### 首页：
 viewPager+分组的ListView+actionBar  
