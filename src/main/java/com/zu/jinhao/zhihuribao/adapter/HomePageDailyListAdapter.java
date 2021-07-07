@@ -1,7 +1,6 @@
 package com.zu.jinhao.zhihuribao.adapter;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,17 +10,9 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 import com.squareup.picasso.Picasso;
 import com.zu.jinhao.zhihuribao.R;
-import com.zu.jinhao.zhihuribao.model.LastNewsJson;
 import com.zu.jinhao.zhihuribao.model.Story;
-import com.zu.jinhao.zhihuribao.model.SubjectDailyContentJson;
 
 import java.util.List;
 
@@ -92,7 +83,6 @@ public class HomePageDailyListAdapter extends BaseAdapter {
         Log.d(TAG,"array[5]"+array[5]);
         Log.d(TAG,"array[6]"+array[6]);
         Log.d(TAG,"array[7]"+array[7]);
-
         return array[4]+""+array[5]+"月"+array[6]+""+array[7]+"日";
     }
 }

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.squareup.picasso.Picasso;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.model.LastNewsJson;

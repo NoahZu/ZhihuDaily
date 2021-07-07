@@ -63,6 +63,10 @@ public class ThemeListAdapter extends BaseAdapter {
         return convertView;
     }
 
+    public void setData(List<SubjectDailyJson.SubjectDaily> subjectDailies) {
+        this.dailyTypes = subjectDailies;
+    }
+
     class ViewHolder{
         @Bind(R.id.type_item_name)
         TextView textView;

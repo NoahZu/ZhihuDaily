@@ -5,18 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebView;
-import com.google.gson.Gson;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
+
+import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.model.NewsContentJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.Response;
 
 public class DailyContentActivity extends ActionBarActivity {
     private static final String TAG = "DailyContentActivity";
@@ -25,7 +27,6 @@ public class DailyContentActivity extends ActionBarActivity {
     @Bind(R.id.daily_content_toolbar)
     Toolbar toolbar;
 
-    private StringFromHttpLoader stringFromHttpLoader;
     public static final  String URL_ID = "url_id";
     private int id;
     public static void actionStart(Context context,int id){
@@ -44,17 +45,19 @@ public class DailyContentActivity extends ActionBarActivity {
         getWeb();//获取url并显示在webview上
     }
     private void getWeb() {
-        String url = Url.NEWS_CONTENT+id;
-        Log.d(TAG,url);
-        stringFromHttpLoader = new StringFromHttpLoader();
-        stringFromHttpLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+        ZhihuDailyService zhihuDailyServiceCall = RetrofitUtil.getZhihuDailyService();
+        Call<NewsContentJson> newsContentJsonCall = zhihuDailyServiceCall.getNewsContent("" + id);
+        newsContentJsonCall.enqueue(new Callback<NewsContentJson>() {
             @Override
-            public void onGetHttpString(String jsonString) {
-                NewsContentJson newsContentJson = new Gson().fromJson(jsonString, NewsContentJson.class);
-                webView.loadUrl(newsContentJson.getShare_url());
+            public void onResponse(Response<NewsContentJson> response) {
+                webView.loadUrl(response.body().getShare_url());
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
             }
         });
-        stringFromHttpLoader.execute(url);
     }
     private void iniToolbar() {
         setSupportActionBar(toolbar);

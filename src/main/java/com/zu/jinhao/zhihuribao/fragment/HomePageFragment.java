@@ -8,22 +8,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.zu.jinhao.zhihuribao.activity.DailyContentActivity;
 import com.zu.jinhao.zhihuribao.adapter.HomePageDailyListAdapter;
 import com.zu.jinhao.zhihuribao.model.PastNewsJson;
 import com.zu.jinhao.zhihuribao.model.Story;
-import com.zu.jinhao.zhihuribao.util.StringFromHttpLoader;
+import com.zu.jinhao.zhihuribao.service.ZhihuDailyService;
+import com.zu.jinhao.zhihuribao.util.RetrofitUtil;
 import com.zu.jinhao.zhihuribao.R;
 import com.zu.jinhao.zhihuribao.adapter.ViewPagerAdapter;
 import com.zu.jinhao.zhihuribao.model.LastNewsJson;
-import com.zu.jinhao.zhihuribao.util.Url;
 import com.zu.jinhao.zhihuribao.util.Util;
 import com.zu.jinhao.zhihuribao.widget.DotWidget;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -36,6 +35,9 @@ import in.srain.cube.views.ptr.PtrDefaultHandler;
 import in.srain.cube.views.ptr.PtrFrameLayout;
 import in.srain.cube.views.ptr.PtrHandler;
 import in.srain.cube.views.ptr.header.MaterialHeader;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.Response;
 
 /**
  * Created by zujinhao on 15/8/26.
@@ -43,6 +45,7 @@ import in.srain.cube.views.ptr.header.MaterialHeader;
 public class HomePageFragment extends Fragment {
     private static final String TAG = "HomePageFragment";
     private View headerView;
+    private View emptyView;
     private View view;
     private DotWidget dotWidget;
     private ViewPager displayDailyPager;
@@ -68,9 +71,10 @@ public class HomePageFragment extends Fragment {
     }
     private void initViews() {
         headerView = LayoutInflater.from(getActivity()).inflate(R.layout.index_daily_header, null);
+        emptyView = this.view.findViewById(R.id.error_view);
         displayDailyPager = (ViewPager)this.headerView.findViewById(R.id.display_daily_pager);
         dotWidget = (DotWidget)this.headerView.findViewById(R.id.dot_widget);
-        dailyListView.addHeaderView(headerView);
+        dailyListView.setEmptyView(emptyView);
         ptrFrameLayout = (PtrFrameLayout)this.view.findViewById(R.id.index_ptr_layout);
     }
     private void initPullToRefreshLayout() {
@@ -122,35 +126,47 @@ public class HomePageFragment extends Fragment {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
                 if (view.getLastVisiblePosition() == view.getCount() - 1) {
-                    Toast.makeText(getActivity(), "====滑到底部啦!", Toast.LENGTH_SHORT).show();
                     getNewsByDate(getYesterday());
                 }
             }
-
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             }
         });
     }
     private void getLastNews() {
-        String lastNewsUrl = Url.LAST_NEWS_URL;
-        StringFromHttpLoader stringLoader = new StringFromHttpLoader();
-        stringLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
-            @Override
-            public void onGetHttpString(String jsonString) {
-                LastNewsJson lastNewsJson = new Gson().fromJson(jsonString, LastNewsJson.class);
-                List<LastNewsJson.TopStory> stories = lastNewsJson.getTop_stories();
-                setTopStoriesToViewPager(stories);
-                setNewsToListView(lastNewsJson.getStories());
-            }
-        });
-        stringLoader.execute(lastNewsUrl);
+        if(Util.isNetworkConnected(getActivity())){
+            ZhihuDailyService service = RetrofitUtil.getZhihuDailyService();
+            Call<LastNewsJson> lastNewsJsonCall = service.getLasetNews();
+            lastNewsJsonCall.enqueue(new Callback<LastNewsJson>() {
+                @Override
+                public void onResponse(Response<LastNewsJson> response) {
+                    LastNewsJson lastNewsJson = response.body();
+                    if(lastNewsJson != null){
+                        setTopStoriesToViewPager(lastNewsJson.getTop_stories());
+                        setStoriesToListView(lastNewsJson.getStories());
+                    }
+                }
+
+                @Override
+                public void onFailure(Throwable t) {
+
+                }
+            });
+        }
+        else{
+            dailyListView.removeHeaderView(headerView);
+            Toast.makeText(getActivity(),getResources().getString(R.string.net_error),Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void setTopStoriesToViewPager(List<LastNewsJson.TopStory> stories) {
+        if (dailyListView.getHeaderViewsCount() ==0){
+            dailyListView.addHeaderView(headerView);
+        }
         displayDailyPager.setAdapter(new ViewPagerAdapter(getActivity(), stories));
     }
-    private void setNewsToListView(final List<Story> stories) {
+    private void setStoriesToListView(final List<Story> stories) {
         indexListStories.clear();
         indexListStories.addAll(stories);
         adapter.notifyDataSetChanged();
@@ -164,16 +180,18 @@ public class HomePageFragment extends Fragment {
         adapter.notifyDataSetChanged();
     }
     private void getNewsByDate(final String date) {
-        String dateNewsUrl = Url.GET_URL_BY_DATE+date;
-        StringFromHttpLoader stringLoader = new StringFromHttpLoader();
-        stringLoader.setGetHttpStringListener(new StringFromHttpLoader.GetHttpStringListener() {
+        Call<PastNewsJson> pastNewsJsonCall = RetrofitUtil.getZhihuDailyService().getPastNews(date);
+        pastNewsJsonCall.enqueue(new Callback<PastNewsJson>() {
             @Override
-            public void onGetHttpString(String jsonString) {
-                PastNewsJson pastNewsJson = new Gson().fromJson(jsonString, PastNewsJson.class);
-                addNewsToListView(pastNewsJson.getStories(),date);
+            public void onResponse(Response<PastNewsJson> response) {
+                addNewsToListView(response.body().getStories(),date);
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+
             }
         });
-        stringLoader.execute(dateNewsUrl);
     }
     public String getYesterday(){
         SimpleDateFormat sim = new SimpleDateFormat("yyyyMMdd");

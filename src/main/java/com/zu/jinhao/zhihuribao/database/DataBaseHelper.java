@@ -72,4 +72,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
         return subjectDalies;
     }
+
+    public void clear(){
+        String sql = "delete from daily";
+        getWritableDatabase().execSQL(sql);
+    }
 }
