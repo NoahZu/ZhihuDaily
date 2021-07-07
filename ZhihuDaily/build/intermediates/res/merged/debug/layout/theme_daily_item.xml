@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/theme_daily_item_min_height"
+    android:layout_margin="@dimen/theme_daily_item_margin"
+    android:background="@color/ITEM_BACK"
+    android:padding="@dimen/theme_daily_item_padding"
+    android:paddingLeft="@dimen/theme_daily_item_padding_left_right"
+    android:paddingRight="@dimen/theme_daily_item_padding_left_right"
+    android:paddingTop="@dimen/theme_daily_item_padding"
+    android:paddingBottom="@dimen/theme_daily_item_padding"
+    >
+    <TextView
+        android:id="@+id/daily_item_text"
+        android:layout_width="@dimen/theme_daily_item_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="@dimen/theme_daily_item_text_size"
+        android:textColor="@color/BLACK"
+        />
+    <ImageView
+        android:id="@+id/daily_item_image"
+        android:layout_width="@dimen/theme_daily_item_width"
+        android:layout_height="@dimen/theme_daily_item_image_height"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

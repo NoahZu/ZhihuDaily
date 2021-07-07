@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zu.jinhao.zhihuribao.activity.MainActivity"
+    android:background="@color/LIGHT_GRAY"
+    >
+    <item
+        android:id="@+id/message"
+        android:title="@string/message"
+        android:icon="@mipmap/message"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/night_pattern"
+        android:title="@string/night_pattern"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_launcher" />
+    <item
+        android:id="@+id/setting_select"
+        android:title="@string/setting_select"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_launcher"
+         />
+</menu>

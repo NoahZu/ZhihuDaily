@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/left_menu_list_item_text_vertical_padding"
+    android:paddingBottom="@dimen/left_menu_list_item_text_vertical_padding"
+    android:background="@color/WHITE"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TextView
+        android:id="@+id/type_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/left_menu_list_item_text_size"
+        android:text="日常心理学"
+        android:layout_marginLeft="@dimen/left_menu_list_item_text_margin_left"
+        android:layout_centerVertical="true"
+        android:textColor="@color/BLACK"
+        />
+    <ImageButton
+        android:id="@+id/type_item_button"
+        android:layout_width="@dimen/left_menu_list_item_image_edge"
+        android:layout_height="@dimen/left_menu_list_item_image_edge"
+        android:background="@mipmap/menu_follow"
+        android:layout_marginLeft="@dimen/left_menu_list_item_image_margin_left"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxxhdpi"
+    format="7"
+    timestamp="6196796048286" >
+
+    <task
+        name="javac"
+        duration="559" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="11" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="E:\AndroidProject\Zhihudaily2\ZhihuDaily\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+        type="DEX" />
+
+    <build timestamp="5050270094000" >
+        <artifact
+            location="E:\AndroidProject\Zhihudaily2\ZhihuDaily\build\outputs\apk\ZhihuDaily-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="6077383869377" >
+        <artifact
+            location="E:\AndroidProject\Zhihudaily2\ZhihuDaily\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="E:\AndroidProject\Zhihudaily2\ZhihuDaily\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="6196796048286" >
+        <artifact
+            location="E:\AndroidProject\Zhihudaily2\ZhihuDaily\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

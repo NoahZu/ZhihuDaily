@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    >
+    <ImageView
+        android:id="@+id/no_net_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/net_error"
+        android:layout_marginTop="@dimen/net_icon_margin_top"
+        />
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_net_image"
+        android:layout_centerHorizontal="true"
+        android:text="@string/net_error"
+        android:layout_marginTop="@dimen/net_text_margin_top"
+        android:textSize="@dimen/net_text_size"/>
+    <Button
+        android:id="@+id/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/net_text_margin_top"
+        android:text="@string/net_ok"
+        />
+</RelativeLayout>

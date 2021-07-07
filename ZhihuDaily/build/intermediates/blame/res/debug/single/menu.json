@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\menu\\menu_sample.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\menu\\menu_sample.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\menu\\menu_theme_daily_content.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\menu\\menu_theme_daily_content.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\menu\\menu_login.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\menu\\menu_login.xml"
+    },
+    {
+        "merged": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\build\\intermediates\\res\\merged\\debug\\menu\\menu_simple.xml",
+        "source": "E:\\AndroidProject\\Zhihudaily2\\ZhihuDaily\\src\\main\\res\\menu\\menu_simple.xml"
+    }
+]
